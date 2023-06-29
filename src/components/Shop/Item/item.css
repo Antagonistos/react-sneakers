@@ -1,0 +1,119 @@
+
+.item{
+	background: #FFFFFF;
+border: 1px solid #F3F3F3;
+border-radius: 40px;
+width: 210px;
+margin-right: 40px;
+margin-bottom: 40px;
+}
+
+.content{
+	padding: 30px;
+}
+
+.title{
+	color: #000000;
+	font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+
+}
+
+#fav{
+	position: absolute;
+}
+
+.item-img{
+	width: 133px;
+}
+
+.text{
+	margin-top: 15px;
+	font-weight: 700;
+font-size: 14px;
+line-height: 17px;
+}
+
+.text span{
+	color: #BDBDBD;
+	font-weight: 500;
+}
+
+.price{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.btn{
+	background: #FFFFFF;
+	border: 1px solid #F8F8F8;
+	border-radius: 7px;
+	padding: 10px;
+	cursor: pointer;
+	width: 32px;
+	height: 32px;
+	display: flex;
+	justify-content: center;
+	align-self: center;
+}
+.btn-fav-active{
+	background: #FEF0F0;
+}
+.btn-cart-active{
+	background: linear-gradient(180deg, #89F09C 0%, #3CC755 100%);
+	border-radius: 8px;
+}
+
+.button{
+	background: #FFFFFF;
+	border: 1px solid #F2F2F2;
+	border-radius: 8px;
+	color: #D3D3D3;
+	font-size: 20px;
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+}
+.button::after{
+	content: '+';
+}
+
+.buttonOn::after{
+	content: url('./img/btnOn.svg');
+}
+.buttonOn{
+	background: linear-gradient(180deg, #89F09C 0%, #3CC755 100%);
+
+}
+
+.buttonRemove::after{
+	content: 'x';
+
+}
+
+.cardItem{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 300px;
+	padding: 20px;
+	margin-right: 0px;
+}
+
+.cardItem .content{
+	padding: 0px;
+	padding-left: 20px;
+}
+
+
+.cardItem .item-img{
+	width: 70px;
+	height: 70px;
+}
+
+.cardItem .title{
+	font-size: 14px;
+	color: #000000;
+}

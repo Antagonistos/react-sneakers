@@ -1,0 +1,29 @@
+.nav{
+	display: flex;
+	justify-content: space-between;
+	max-width: 200px;
+}
+
+
+
+.item{
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 17px;
+	color: #5C5C5C;
+	padding: 0px 15px;
+	display: flex;
+	white-space: nowrap;
+	cursor: pointer;
+}
+
+#cart::before{
+	content: url(./img/cart.svg);
+}
+
+#fav::before{
+	content: url(./img/fav.svg);
+}
+#profile::before{
+	content: url(./img/profile.svg);
+}

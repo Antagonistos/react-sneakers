@@ -1,0 +1,90 @@
+.wrapper{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 1;
+}
+
+.content{
+	background: #000000;
+	box-shadow: -10px 4px 24px rgba(0, 0, 0, 0.1);
+	width: 100%;
+	z-index: 1;
+	opacity: 0.5;
+}
+
+.inner{
+	background: #FFF;
+	padding: 50px;
+	height: 100%;
+	z-index: 2;
+	overflow-y: scroll;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	max-width: 271px;
+	width: 100%;
+}
+
+.title{
+	font-weight: 700;
+font-size: 24px;
+line-height: 29px;
+color: #000000;
+margin-bottom: 40px;
+}
+
+.item{
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.control{
+	position: fixed;
+	bottom: 15px;
+	max-width: 300px;
+	background: #fff;
+}
+
+.btnBuy{
+background: #9DD558;
+border-radius: 18px;
+width: 100%;
+color: #fff;
+border: transparent;
+padding: 18px 0px;
+cursor: pointer;
+position: relative;
+}
+
+.btnBuyActive::after{
+	display: none;
+}
+.btnBuyActive::before{
+	content: url('./img/arrow2.svg');
+	align-self: center;
+}
+.btnBuy::after{
+	content: url('./img/arrow.svg');
+	right: 20px;
+	position: absolute;
+}
+
+.text{
+	opacity: 0.4;
+	margin-bottom: 40px;
+}
+
+.title span{
+	color: #87C20A;
+	font-size: 22px;
+line-height: 27px;
+font-weight: 600;
+}
